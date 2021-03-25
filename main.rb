@@ -1,4 +1,3 @@
-# require "pry"
 
 # 他ファイル参照
 require './character'
@@ -13,7 +12,6 @@ monster = Monster.new(name: "シドー", hp: 250, offense: 255, defense: 255)
 # モンスターの出現
 puts "#{monster.name}があらわれた！"
 
-# binding.pry
 loop do
   # ゆうしゃ→モンスターの攻撃
   brave.attack_monster(monster)
