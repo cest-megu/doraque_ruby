@@ -10,7 +10,7 @@ class Brave < Character
     #{monster.name}に#{monster_damage}のダメージを与えた！
     TEXT
     #モンスターのHPはダメージ分減る、HPが0の時終了
-    if monster.hp > monster_damage then
+    if monster.hp > monster_damage
       monster.hp -= monster_damage
     else
       monster.hp = 0

@@ -7,7 +7,7 @@ require './monster'
 # ゆうしゃとモンスターの初期ステータス
 brave = Brave.new(name: "ゆうしゃ", hp: 238, offense: 203, defense: 129)
 monster = Monster.new(name: "アークデーモン", hp: 210, offense: 140, defense: 80)
-monster = Monster.new(name: "シドー", hp: 250, offense: 255, defense: 255)
+# monster = Monster.new(name: "シドー", hp: 250, offense: 255, defense: 255)
 
 # モンスターの出現
 puts "#{monster.name}があらわれた！"
@@ -34,6 +34,6 @@ end
   if brave.hp == 0
     puts "#{brave.name} はしんでしまった!"
   # モンスターのHPが0の時の表示
-  elsif monster.hp == 0
+  else monster.hp == 0
     puts "#{monster.name} をやっつけた！"
   end

@@ -8,7 +8,7 @@ class Monster < Character
     #{brave.name}は#{brave_damage}のダメージを受けた！
     TEXT
     # ゆうしゃのHPはダメージ分減る,HPが0の時終了
-    if brave.hp > brave_damage then
+    if brave.hp > brave_damage
       brave.hp -= brave_damage
     else
       brave.hp = 0
